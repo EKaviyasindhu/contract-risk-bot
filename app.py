@@ -47,14 +47,14 @@ if uploaded_file:
                     st.error(f"{risk_name} — {risk_level} Risk")
 
                     if st.button(f"Explain & Suggest Fix ({clause_id})",  key=f"explain_{clause_id}_{risk_name}_{risk_level}"):
-                        #try:
-                        explanation = explain_clause(clause_text, risk_name)
-                        st.markdown("### AI Explanation & Recommendation")
-                        st.write(explanation)
-                        # except Exception:
-                        #     st.warning(
-                        #         "AI explanation is disabled in this demo environment. "
-                        #         "The system supports GPT-4–class reasoning when API access is enabled."
-                        #     )
+                        try:
+                            explanation = explain_clause(clause_text, risk_name)
+                            st.markdown("### AI Explanation & Recommendation")
+                            st.write(explanation)
+                        except Exception:
+                            st.warning(
+                                "AI explanation is disabled in this demo environment. "
+                                "The system supports GPT-4–class reasoning when API access is enabled."
+                            )
             else:
                 st.success("No major risks detected")
