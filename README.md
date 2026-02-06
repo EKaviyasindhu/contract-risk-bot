@@ -33,4 +33,4 @@ The solution helps SMEs make informed legal decisions quickly, reduces dependenc
 
 ## Live Demo
 👉 **Streamlit App URL:**  
-[_Paste your Streamlit live link here_](https://contract-risk-bot-bmfzhgzbjhx4nmceveqz5v.streamlit.app/)
+(https://contract-risk-bot-bmfzhgzbjhx4nmceveqz5v.streamlit.app/)
